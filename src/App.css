@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+.login-parent {
+  display: flex;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-card {
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px;
+  padding: 50px;
+  margin-top: 200px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 10px 5px rgb(65, 70, 65);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-card > form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  height: 100%;
+} 
+
+.login-card > form > input {
+  box-sizing: border-box;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 16px;
+  border-color: rgb(15, 15, 15);
+}
+
+.login-card > form > p {
+  box-sizing: border-box;
+  height: 20px;
+  margin: 0px;
+  font-size: 14px;
+  color: red;
+}
+
+.login-card > form > input:hover {
+  border-color: rgb(65, 70, 65);
+}
+
+input[type="submit"] {
+  background-color: rgb(15, 15, 15);
+  border-width: 0px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+input[type="submit"]:hover {
+  background-color: rgb(65, 70, 65);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dashboard-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.employee-card > p > span {
+  font-weight: bold;
 }
